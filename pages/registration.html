@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Регестрація</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <nav class="navbar">
+      <ul class="navbar-list">
+        <li class="navbar-list__item">
+          <a class="navbar-list__link" href="../index.html">Головна</a>
+        </li>
+        <li class="navbar-list__item">
+          <a class="navbar-list__link" href="article.html">Стаття</a>
+        </li>
+        <li class="navbar-list__item">
+          <a class="navbar-list__link" href="catalog.html">Каталог</a>
+        </li>
+        <li class="navbar-list__item">
+          <a class="navbar-list__link" href="gallery.html">Галарея</a>
+        </li>
+        <li class="navbar-list__item">
+          <a class="navbar-list__link" href="contacts.html">Контакти</a>
+        </li>
+        <li class="navbar-list__item">
+          <a class="navbar-list__link" href="page-nav.html">Навігація</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+
+
+    <h1>Форма регестрації</h1>
+
+    <form action="register.php" method="GET">
+      <fieldset>
+        <legend>#1 Базові поля введення</legend>
+        <div class="form-group">
+          <label>Логін: <input required name="login" value="userName" minlength="3" maxlength="10"
+              placeholder="Введите логин" type="text"></label>
+        </div>
+        <div class="form-group">
+          <label>Пароль: <input name="passw" minlength="5" maxlength="10" placeholder="Пароль" type="password"></label>
+        </div>
+        <div class="form-group">
+          <label>Вік: <input name="age" min="1" max="122" value="1" placeholder="Возраст" type="number"></label>
+        </div>
+        <div class="form-group">
+          <label>Email: <input name="email" placeholder="Имейл" type="email"></label>
+        </div>
+        <div class="form-group">
+          <label>Пошук: <input name="search" placeholder="Поиск" type="search"></label>
+        </div>
+        <div class="form-group">
+          <label>Телефон: <input name="phone" placeholder="Телефон" type="tel"></label>
+        </div>
+        <div class="form-group">
+          <label>Рік народження: <input name="date" type="date"></label>
+        </div>
+        <div class="form-group">
+          <label>Дата вступу до вузу: <input name="month" type="month"></label>
+        </div>
+        <div class="form-group">
+          <label>Ваша аватарка: <input name="file" type="file"></label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>#2 Множественный выбор</legend>
+
+        <p>Выбор предпочитаемой кухни</p>
+
+        <div class="form-group">
+          <input class="border-type" name="kit" value="ua" type="checkbox" id="ua">
+          <label for="ua">Українська</label>
+        </div>
+        <div class="form-group">
+          <input class="border-type" name="kit" value="md" type="checkbox" id="md">
+          <label for="md">Молдавська</label>
+        </div>
+        <div class="form-group">
+          <input class="border-type" name="kit" value="gr" type="checkbox" id="gr">
+          <label for="gr">Грузинська</label>
+        </div>
+        <div class="form-group">
+          <input class="border-type" name="kit" value="it" type="checkbox" id="it">
+          <label for="it">Італійська</label>
+        </div>
+        <div class="form-group">
+          <input class="border-type" name="kit" value="it" type="checkbox" id="sp">
+          <label for="it">Іспанська</label>
+        </div>
+        <div class="form-group">
+          <input class="border-type" name="kit" value="it" type="checkbox" id="ch">
+          <label for="it">Кітайська</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>#3 Единственный выбор</legend>
+
+        <p>Вкажіть стать</p>
+
+        <div class="form-group">
+          <input class="border-type" type="radio" value="male" name="gender" id="male">
+          <label for="male">Мужской</label>
+
+          <input class="border-type" type="radio" value="female" name="gender" id="female">
+          <label for="female">Женский</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>#4 Раскрывающийся список</legend>
+        <div class="form-group">
+          <label for="year">Год выпуска вашего авто</label>
+          <select name="year" id="year" multiple size="10">
+            <option selected disabled value="">Выберите год</option>
+            <option value="2011">2011</option>
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>#5 Многострочное поле ввода</legend>
+        <div class="form-group">
+          <label for="multi-text">Подробная информация</label>
+          <textarea placeholder="Введите инфу о себе..." name="txt" id="multi-text" cols="30" rows="10"></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>#6 Кнопки управления формой</legend>
+        <div>
+          <button class="btn" type="submit">Отправить </button>
+          <button class="btn" type="reset">Сбросить</button>
+          <button class="btn" onclick="prompt('Как ваши дела?', 'отлично');" type="button">Потренироваться</button>
+        </div>
+      </fieldset>
+    </form>
+
+  </main>
+
+  <footer class="footer">
+    <div>&copy; Markian Smigelskij</div>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Контакти</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li class="navbar-list__item">
+                    <a class="navbar-list__link" href="../index.html">Головна</a>
+                </li>
+                <li class="navbar-list__item">
+                    <a class="navbar-list__link" href="article.html">Стаття</a>
+                </li>
+                <li class="navbar-list__item">
+                    <a class="navbar-list__link" href="catalog.html">Каталог</a>
+                </li>
+                <li class="navbar-list__item">
+                    <a class="navbar-list__link" href="gallery.html">Галарея</a>
+                </li>
+                <li class="navbar-list__item">
+                    <a class="navbar-list__link" href="registration.html">Регестрація</a>
+                </li>
+                <li class="navbar-list__item">
+                    <a class="navbar-list__link" href="page-nav.html">Навігація</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <h1>Контакти</h1>
+
+        <h2>Адреса</h2>
+
+        <p>м.Львів<br>
+            вул.Городотська 225,<br>
+            поверх 1
+        </p>
+
+        <h2>Час роботи</h2>
+        <p>Пн.-Пт.: з 09:00 до 18:00</p>
+
+
+
+        <h2>Як нас найти</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d454.9472794521202!2d23.97878071397306!3d49.831738058640816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae763b3955555%3A0x627e32f87713d2d!2z0J7QsdC70LDQtNC90LDQvdC90Y8g0LTQu9GPINGB0LDQu9C-0L3RltCyINC60YDQsNGB0Lgg0ZYgU1BBIC0g0LrQvtC80L_QsNC90ZbRjyAiQkVBVVRZIEJVU0lORVNTIGluIFVLUkFJTkUi!5e0!3m2!1suk!2sua!4v1613677872500!5m2!1suk!2sua width="
+            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0">
+        </iframe>
+
+        <form action="contacts.php" method="GET">
+
+            <h2>Обратная связь</h2>
+
+            <fieldset>
+                <label>Ваше імя:
+                    <input name="name" type="text" placeholder="Введите імя" autofocus>
+                </label>
+                <label>Номер телофону:
+                    <input name="phone" type="tel" pattern="380-[0-9]{5}-[0-9]{4}"
+                        placeholder="Ваш телефон в формате 380-XXXXX-XXXX">
+                </label>
+                <label>Email:
+                    <input name="email" type="email" placeholder="Ваш e-mail">
+                </label>
+                <label>Питання:
+                    <textarea class="contacts__form-textarea" name="question" id="text-field" cols="40" rows="7"
+                        placeholder="Задайте нам своє питання"></textarea>
+                </label>
+                <input type="submit" value="Відправити">
+            </fieldset>
+
+        </form>
+
+    </main>
+
+    <footer class="footer">
+        <div>&copy; Markian Smigelskij</div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,312 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+min-height: 100vh;
+background-color: white;
+background-image: url(/jpg/cat_PNG50495.png), url(/jpg/fon.jpg);
+background-position: right top;
+background-repeat: no-repeat;
+background-size: 200px, cover ;
+margin: 0;
+}
+
+.container {
+ width: 100%;
+ max-width: 1280px;
+ padding: 30px 20px;
+ min-height: 100vh;
+ margin: 0 auto;
+ position: relative;
+ background-color: #dae4ee;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+text-align: center;
+color: rgb(17, 204, 163);
+}
+
+.navbar-list {
+  list-style-type: none;
+  padding: 50px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-list__link {
+  text-transform: uppercase;
+  font-family: "Roboto Slab", serif;
+  font-size: large;
+  color: rgb(1, 51, 1);
+  border: 1px solid green;
+  border-radius: 7px;
+  box-shadow: 3px 5px 7px rgb(138, 138, 138);
+  text-decoration: none;
+  font-weight: lighter;
+  padding: 10px 15px;
+  display: block;
+
+}
+.navbar-list__link:hover {
+  background-color: rgb(120, 120, 180);
+  color: white;
+  transform: translateY(-10px) scale(1.2);
+}
+
+.navbar-social {
+  position: fixed;
+  top: 35px;
+  left: 0;
+}
+
+.navbar-social__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-social__item {
+  margin-left: 5px;
+}
+
+.navbar-social__link {
+  display: block;
+  font-size: 1.5rem;
+  color: rgb(8, 53, 28);
+}
+
+.navbar-social__link:hover {
+  color: rgb(172, 60, 40);
+  transition: 0.5s;
+  transform: translateY(-10px) scale(1.2);
+}
+
+.main-link {
+  color: rgb(8, 58, 37);
+  box-shadow: 3px 5px 7px rgb(255, 251, 251);
+  border: px solid rgb(0, 0, 0);
+  background-color: honeydew;
+  padding: 5px 5px;
+  width: 35%;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  flex-wrap: wrap;
+}
+
+.content-list__item {
+  font-size: 24px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 33%;
+  height: 350px;
+  flex-wrap: wrap;
+}
+
+.navbar-list__item {
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+.main-articles {
+  text-decoration: none;
+  font-family: cursive;
+  color: rgb(0, 116, 4);
+}
+
+.articles {
+  border-bottom: 1px solid grey;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.articles-title {
+  background-image: url(/jpg/background4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a.read-more:hover {
+  color: red;
+  text-decoration: none;
+}
+
+a.read-comments {
+  color: rgb(65, 40, 3);
+}
+
+.title {
+  text-align: center;
+}
+
+.first-letter::first-letter {
+  color: rgb(51, 8, 168);
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.footer {
+  text-align: center;
+  border-top: 1px solid grey;
+  padding-top: 15px;
+}
+
+.catalog {
+  width: 47%;
+}
+
+.list-img {
+  background-color: rgb(137, 190, 221);
+  font-size: 24px;
+}
+
+.list {
+  background-color: rgb(197, 192, 243);
+}
+
+.list-img__item {
+  font-size: 16px;
+}
+
+.new::after {
+  content: "new";
+  background-color: rgb(42, 45, 250);
+  color: rgb(255, 255, 255);
+  margin: 4px;
+}
+
+.list-img::before {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right: 5px;
+  background-image: url(/jpg/puppy_games.png);
+  background-size: contain;
+}
+
+.list-img__item::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-left: 5px;
+  background-image: url(/jpg/emoticon.png);
+  background-size: contain;
+}
+
+.image-gallery {
+  background-image: url(/jpg/pink-alcohol-ink-background-abstract-fluid-art-painting-design_25819-699.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-image {
+  outline: 2px solid rgb(92, 0, 100);
+  display: flex;
+  justify-content: center;
+}
+
+.main-image:hover {
+  outline: none;
+}
+
+.border-type:hover {
+  outline: dashed;
+}
+
+.name-type {
+  text-transform: capitalize;
+}
+
+.content-list__item--article {
+  background-image: url(/jpg/article.jpg);
+}
+
+.content-list__item--catalog {
+  background-image: url(/jpg/catalog_arkcryo_1.jpg);
+}
+.content-list__item--image_gallery {
+  background-image: url(/jpg/gallery.jpg);
+}
+.content-list__item--registration {
+  background-image: url(/jpg/завантаження.png);
+}
+.content-list__item--contacts {
+  background-image: url(/jpg/contact.jpg);
+}
+.content-list__item--nav {
+  background-image: url(/jpg/nav.png);
+}
+
+fieldset {
+  max-width: 500px;
+  margin: 20px auto;
+  background-color: lightgray;
+}
+
+textarea,
+select,
+input {
+  width: 100%;
+  padding: 7px 15px;
+  border: 1px solid gray;
+  border-radius: 7px;
+}
+
+input {
+  width: 100%;
+  padding: 7px 15px;
+  margin-bottom: 10px;
+}
+
+input[type="file"] {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  display: inline-block;
+}
+
+.hidden {
+  display: none;
+}
+.form-group {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.btn {
+  width: 100%;
+  padding: 7px 15px;
+  border: 1px solid gray;
+  border-radius: 7px;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
